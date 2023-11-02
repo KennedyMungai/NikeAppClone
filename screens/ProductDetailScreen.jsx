@@ -4,7 +4,8 @@ import {
 	Image,
 	FlatList,
 	useWindowDimensions,
-	Text
+	Text,
+	ScrollView
 } from 'react-native'
 import products from '../data/products'
 import colors from '../constants/colors'
@@ -15,7 +16,7 @@ const ProductDetailScreen = () => {
 	const { width } = useWindowDimensions()
 
 	return (
-		<View>
+		<ScrollView>
 			{/* Image Carousel */}
 			<FlatList
 				data={product.images}
@@ -46,7 +47,7 @@ const ProductDetailScreen = () => {
 
 				{/* Navigation Icon */}
 			</View>
-		</View>
+		</ScrollView>
 	)
 }
 
@@ -58,13 +59,16 @@ const styles = StyleSheet.create({
 	},
 	productTitle: {
 		textAlign: 'center',
-		fontSize: 24,
+		fontSize: 34,
 		textTransform: 'uppercase',
 		fontWeight: 'bold',
-		color: colors.eggPlant
+		color: colors.eggPlant,
+		marginVertical: 10
 	},
 	productPrice: {
-		color: colors.mauveTaupe
+		color: colors.mauveTaupe,
+		fontWeight: '500',
+		fontSize: 16
 	},
 	productDescription: {
 		color: colors.eerieBlack,
