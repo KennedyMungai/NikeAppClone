@@ -1,20 +1,30 @@
-import { StyleSheet, View, Image, FlatList } from 'react-native'
+import {
+	StyleSheet,
+	View,
+	Image,
+	FlatList,
+	useWindowDimensions
+} from 'react-native'
 import products from '../data/products'
 
 const ProductDetailScreen = () => {
 	const product = products[0]
+
+	const { width } = useWindowDimensions()
 
 	return (
 		<View>
 			{/* Image Carousel */}
 			<FlatList
 				data={product.images}
-				renderItem={({ item }) => (
+				renderItem={({ item, index }) => (
 					<Image
 						source={{ uri: item }}
-						style={styles.imageCarousel}
+						style={[styles.imageCarousel, { width }]}
+						key={index}
 					/>
 				)}
+				horizontal
 			/>
 
 			{/* Title */}
@@ -34,7 +44,6 @@ export default ProductDetailScreen
 
 const styles = StyleSheet.create({
 	imageCarousel: {
-		width: '100%',
 		aspectRatio: 1
 	}
 })
