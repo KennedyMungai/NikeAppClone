@@ -49,7 +49,7 @@ const ProductDetailScreen = () => {
 						display: 'flex',
 						width: width / 3,
 						marginVertical: 10,
-						borderRadius: 3,
+						borderRadius: 5,
 						alignSelf: 'flex-end'
 					}}
 					onPress={() => console.log('Add to Cart')}
