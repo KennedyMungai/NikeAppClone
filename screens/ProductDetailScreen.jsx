@@ -36,7 +36,7 @@ const ProductDetailScreen = () => {
 			<View style={styles.productDescriptionView}>
 				<Text style={styles.productTitle}>{product.name}</Text>
 				{/* Price */}
-				<Text style={styles.productPrice}>{product.price}</Text>
+				<Text style={styles.productPrice}>${product.price}</Text>
 
 				{/* Description */}
 				<Text style={styles.productDescription}>
