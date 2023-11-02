@@ -5,7 +5,8 @@ import {
 	FlatList,
 	useWindowDimensions,
 	Text,
-	ScrollView
+	ScrollView,
+	Pressable
 } from 'react-native'
 import products from '../data/products'
 import colors from '../constants/colors'
@@ -42,6 +43,27 @@ const ProductDetailScreen = () => {
 					{product.description}
 				</Text>
 				{/* Add To Cart Button */}
+				<Pressable
+					style={{
+						backgroundColor: colors.mauveTaupe,
+						display: 'flex',
+						marginVertical: 10,
+						borderRadius: 3,
+						justifyContent: 'flex-end'
+					}}
+					onPress={() => console.log('Add to Cart')}
+				>
+					<Text
+						style={{
+							padding: 10,
+							textAlign: 'center',
+							fontSize: 20,
+							color: colors.isabelline
+						}}
+					>
+						Add to Cart
+					</Text>
+				</Pressable>
 				{/* Navigation Icon */}
 			</View>
 		</ScrollView>
