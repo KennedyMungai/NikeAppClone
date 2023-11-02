@@ -78,6 +78,7 @@ const styles = StyleSheet.create({
 	},
 	productDescriptionView: {
 		paddingHorizontal: 20,
-		paddingVertical: 10
+		paddingVertical: 10,
+		backgroundColor: colors.isabelline
 	}
 })
