@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
 		fontWeight: '500'
 	},
 	productDescriptionView: {
-		paddingHorizontal: 10,
-		paddingVertical: 5
+		paddingHorizontal: 20,
+		paddingVertical: 10
 	}
 })
