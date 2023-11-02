@@ -1,9 +1,18 @@
-import { Text, StyleSheet } from 'react-native'
+import { Text, StyleSheet, SafeAreaView } from 'react-native'
 
 const ShoppingCartScreen = () => {
-	return <Text>ShoppingCartScreen</Text>
+	return (
+		<SafeAreaView style={styles.safeAreaViewStyles}>
+			<Text>ShoppingCartScreen</Text>
+		</SafeAreaView>
+	)
 }
 
 export default ShoppingCartScreen
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+	safeAreaViewStyles: {
+		paddingHorizontal: 5,
+		paddingVertical: 20
+	}
+})
