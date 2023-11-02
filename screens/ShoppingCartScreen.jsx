@@ -1,16 +1,15 @@
+import { Feather } from '@expo/vector-icons'
 import {
-	View,
-	StyleSheet,
-	SafeAreaView,
 	FlatList,
-	Text,
 	Pressable,
-	ScrollView
+	ScrollView,
+	StyleSheet,
+	Text,
+	View
 } from 'react-native'
-import cart from '../data/cart'
 import CartListItem from '../components/CartListItem'
 import colors from '../constants/colors'
-import { Feather } from '@expo/vector-icons'
+import cart from '../data/cart'
 
 const ShoppingCartScreen = () => {
 	const checkoutItems = () => {
@@ -18,7 +17,6 @@ const ShoppingCartScreen = () => {
 	}
 
 	return (
-		// <SafeAreaView style={styles.safeAreaViewStyles}>
 		<>
 			<FlatList
 				data={cart}
@@ -66,7 +64,6 @@ const ShoppingCartScreen = () => {
 				</Pressable>
 			</ScrollView>
 		</>
-		// </SafeAreaView>
 	)
 }
 
