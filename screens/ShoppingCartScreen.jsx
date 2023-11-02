@@ -1,4 +1,4 @@
-import { Text, StyleSheet, SafeAreaView } from 'react-native'
+import { Text, StyleSheet, SafeAreaView, FlatList } from 'react-native'
 
 const ShoppingCartScreen = () => {
 	return (
