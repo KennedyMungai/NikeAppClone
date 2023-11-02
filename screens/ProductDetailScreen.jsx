@@ -5,7 +5,21 @@ const ProductDetailScreen = () => {
 	const product = products[0]
 	console.log(product)
 
-	return <View>ProductDetailScreen</View>
+	return (
+		<View>
+			{/* Image Carousel */}
+
+			{/* Title */}
+
+			{/* Price */}
+
+			{/* Description */}
+
+			{/* Add To Cart Button */}
+
+			{/* Navigation Icon */}
+		</View>
+	)
 }
 
 export default ProductDetailScreen
