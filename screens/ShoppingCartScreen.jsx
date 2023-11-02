@@ -20,8 +20,8 @@ const ShoppingCartScreen = () => {
 							<Text style={styles.cartSummary}>$10,00</Text>
 						</View>
 						<View style={styles.row}>
-							<Text style={styles.cartSummary}>Total</Text>
-							<Text style={styles.cartSummary}>$420,00</Text>
+							<Text style={styles.cartSummaryBold}>Total</Text>
+							<Text style={styles.cartSummaryBold}>$420,00</Text>
 						</View>
 					</View>
 				)}
@@ -50,6 +50,11 @@ const styles = StyleSheet.create({
 	cartSummary: {
 		color: colors.isabelline,
 		fontSize: 18,
+		fontWeight: 'bold'
+	},
+	cartSummaryBold: {
+		color: colors.white,
+		fontSize: 20,
 		fontWeight: 'bold'
 	}
 })
