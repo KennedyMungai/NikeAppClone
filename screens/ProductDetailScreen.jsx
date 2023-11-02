@@ -3,9 +3,11 @@ import {
 	View,
 	Image,
 	FlatList,
-	useWindowDimensions
+	useWindowDimensions,
+	Text
 } from 'react-native'
 import products from '../data/products'
+import colors from '../constants/colors'
 
 const ProductDetailScreen = () => {
 	const product = products[0]
@@ -30,6 +32,7 @@ const ProductDetailScreen = () => {
 			/>
 
 			{/* Title */}
+			<Text style={styles.productTitle}>{product.name}</Text>
 
 			{/* Price */}
 
@@ -47,5 +50,12 @@ export default ProductDetailScreen
 const styles = StyleSheet.create({
 	imageCarousel: {
 		aspectRatio: 1
+	},
+	productTitle: {
+		textAlign: 'center',
+		fontSize: 24,
+		textTransform: 'uppercase',
+		fontWeight: 'bold',
+		color: colors.eerieBlack
 	}
 })
