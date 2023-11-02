@@ -28,7 +28,9 @@ const styles = StyleSheet.create({
 	safeAreaViewStyles: {
 		paddingVertical: 20
 	},
-	totalsContainer: {},
+	totalsContainer: {
+		backgroundColor: colors.middleGreen
+	},
 	row: {
 		flexDirection: 'row',
 		justifyContent: 'space-between',
