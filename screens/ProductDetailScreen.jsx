@@ -25,6 +25,7 @@ const ProductDetailScreen = () => {
 					/>
 				)}
 				horizontal
+				showsHorizontalScrollIndicator={false}
 			/>
 
 			{/* Title */}
