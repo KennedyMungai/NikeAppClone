@@ -18,6 +18,7 @@ const Navigation = () => {
 				<Stack.Screen
 					name='ShoppingCart'
 					component={ShoppingCartScreen}
+					options={{ presentation: 'modal' }}
 				/>
 			</Stack.Navigator>
 		</NavigationContainer>
