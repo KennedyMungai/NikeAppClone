@@ -50,7 +50,7 @@ const styles = StyleSheet.create({
 	cartSummary: {
 		color: colors.isabelline,
 		fontSize: 18,
-		fontWeight: 'bold'
+		fontWeight: '400'
 	},
 	cartSummaryBold: {
 		color: colors.white,
