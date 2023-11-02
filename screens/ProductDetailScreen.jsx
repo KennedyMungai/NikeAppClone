@@ -67,7 +67,8 @@ const styles = StyleSheet.create({
 	productPrice: {
 		color: colors.mauveTaupe,
 		fontWeight: '700',
-		fontSize: 16
+		fontSize: 16,
+		letterSpacing: 1.2
 	},
 	productDescription: {
 		color: colors.eerieBlack,
