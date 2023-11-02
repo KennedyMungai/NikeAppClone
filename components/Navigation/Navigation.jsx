@@ -5,6 +5,7 @@ import ProductsScreen from '../../screens/ProductsScreen'
 import ShoppingCartScreen from '../../screens/ShoppingCartScreen'
 import { Pressable } from 'react-native'
 import { Feather } from '@expo/vector-icons'
+import colors from '../../constants/colors'
 
 const Stack = createNativeStackNavigator()
 
@@ -21,7 +22,7 @@ const Navigation = () => {
 								<Feather
 									name='shopping-cart'
 									size={24}
-									color='black'
+									color={colors.eerieBlack}
 								/>
 							</Pressable>
 						)
