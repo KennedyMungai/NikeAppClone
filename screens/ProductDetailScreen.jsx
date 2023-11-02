@@ -7,6 +7,10 @@ const ProductDetailScreen = () => {
 	return (
 		<View>
 			{/* Image Carousel */}
+			<Image
+				source={{ uri: product.images[0] }}
+				style={styles.imageCarousel}
+			/>
 
 			{/* Title */}
 
@@ -23,4 +27,9 @@ const ProductDetailScreen = () => {
 
 export default ProductDetailScreen
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+	imageCarousel: {
+		width: '100%',
+		aspectRatio: 1
+	}
+})
