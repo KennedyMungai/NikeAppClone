@@ -16,6 +16,10 @@ const ProductDetailScreen = () => {
 
 	const { width } = useWindowDimensions()
 
+	const addToCart = () => {
+		console.log('Add to cart')
+	}
+
 	return (
 		<ScrollView>
 			{/* Image Carousel */}
@@ -52,7 +56,7 @@ const ProductDetailScreen = () => {
 						borderRadius: 5,
 						alignSelf: 'flex-end'
 					}}
-					onPress={() => console.log('Add to Cart')}
+					onPress={addToCart}
 				>
 					<Text
 						style={{
