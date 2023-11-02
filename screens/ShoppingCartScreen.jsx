@@ -1,9 +1,14 @@
 import { Text, StyleSheet, SafeAreaView, FlatList } from 'react-native'
+import cart from '../data/cart'
+import CartListItem from '../components/CartListItem'
 
 const ShoppingCartScreen = () => {
 	return (
 		<SafeAreaView style={styles.safeAreaViewStyles}>
-			<Text>ShoppingCartScreen</Text>
+			<FlatList
+				data={cart}
+				renderItem={({ item }) => <CartListItem cartItem={item} />}
+			/>
 		</SafeAreaView>
 	)
 }
