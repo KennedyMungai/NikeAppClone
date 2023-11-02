@@ -1,4 +1,4 @@
-import { StyleSheet, View, Image } from 'react-native'
+import { StyleSheet, View, Image, FlatList } from 'react-native'
 import products from '../data/products'
 
 const ProductDetailScreen = () => {
@@ -7,9 +7,14 @@ const ProductDetailScreen = () => {
 	return (
 		<View>
 			{/* Image Carousel */}
-			<Image
-				source={{ uri: product.images[0] }}
-				style={styles.imageCarousel}
+			<FlatList
+				data={product.images}
+				renderItem={({ item }) => (
+					<Image
+						source={{ uri: item }}
+						style={styles.imageCarousel}
+					/>
+				)}
 			/>
 
 			{/* Title */}
