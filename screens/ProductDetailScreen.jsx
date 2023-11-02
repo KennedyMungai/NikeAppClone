@@ -53,7 +53,7 @@ const ProductDetailScreen = () => {
 						backgroundColor: colors.mauveTaupe,
 						display: 'flex',
 						// width: width / 3,
-						marginVertical: 10,
+						marginVertical: 20,
 						borderRadius: 5,
 						alignSelf: 'flex-end'
 					}}
