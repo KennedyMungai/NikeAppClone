@@ -15,6 +15,14 @@ const ShoppingCartScreen = () => {
 							<Text style={styles.cartSummary}>Subtotal</Text>
 							<Text style={styles.cartSummary}>$410,00</Text>
 						</View>
+						<View style={styles.row}>
+							<Text style={styles.cartSummary}>Delivery</Text>
+							<Text style={styles.cartSummary}>$10,00</Text>
+						</View>
+						<View style={styles.row}>
+							<Text style={styles.cartSummary}>Total</Text>
+							<Text style={styles.cartSummary}>$420,00</Text>
+						</View>
 					</View>
 				)}
 			/>
@@ -36,7 +44,8 @@ const styles = StyleSheet.create({
 		justifyContent: 'space-between',
 		padding: 10,
 		backgroundColor: colors.middleGreen,
-		marginTop: 20
+		borderWidth: 1,
+		borderColor: colors.isabelline
 	},
 	cartSummary: {
 		color: colors.isabelline,
