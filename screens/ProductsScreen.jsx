@@ -1,5 +1,5 @@
+import { FlatList, Image, Pressable, StyleSheet } from 'react-native'
 import products from '../data/products'
-import { FlatList, View, StyleSheet, Image, Pressable } from 'react-native'
 
 const ProductsScreen = () => {
 	return (
@@ -7,7 +7,12 @@ const ProductsScreen = () => {
 			data={products}
 			renderItem={({ item }) => (
 				<Pressable
-					onPressed={() => navigation.navigate('ProductDetail', item)}
+					onPressed={
+						() => {
+							navigation.navigate('Product Details')
+						}
+						// () => console.log(item)
+					}
 					style={styles.itemContainer}
 				>
 					<Image
