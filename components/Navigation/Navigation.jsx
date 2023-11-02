@@ -1,7 +1,12 @@
-import { View } from 'react-native'
+import { NavigationContainer } from '@react-navigation/native'
+import ProductsScreen from '../../screens/ProductsScreen'
 
 const Navigation = () => {
-	return <View>Navigation</View>
+	return (
+		<NavigationContainer>
+			<ProductsScreen />
+		</NavigationContainer>
+	)
 }
 
 export default Navigation
