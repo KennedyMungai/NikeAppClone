@@ -33,8 +33,8 @@ const ProductDetailScreen = () => {
 			/>
 
 			{/* Title */}
-			<Text style={styles.productTitle}>{product.name}</Text>
 			<View style={styles.productDescriptionView}>
+				<Text style={styles.productTitle}>{product.name}</Text>
 				{/* Price */}
 				<Text style={styles.productPrice}>{product.price}</Text>
 
@@ -58,7 +58,6 @@ const styles = StyleSheet.create({
 		aspectRatio: 1
 	},
 	productTitle: {
-		textAlign: 'center',
 		fontSize: 34,
 		textTransform: 'uppercase',
 		fontWeight: 'bold',
