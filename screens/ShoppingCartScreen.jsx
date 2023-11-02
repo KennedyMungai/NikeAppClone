@@ -11,6 +11,23 @@ import CartListItem from '../components/CartListItem'
 import colors from '../constants/colors'
 import cart from '../data/cart'
 
+const shoppingCartTotals = () => (
+	<View style={styles.totalsContainer}>
+		<View style={styles.row}>
+			<Text style={styles.cartSummary}>Subtotal</Text>
+			<Text style={styles.cartSummary}>$410,00</Text>
+		</View>
+		<View style={styles.row}>
+			<Text style={styles.cartSummary}>Delivery</Text>
+			<Text style={styles.cartSummary}>$10,00</Text>
+		</View>
+		<View style={styles.row}>
+			<Text style={styles.cartSummaryBold}>Total</Text>
+			<Text style={styles.cartSummaryBold}>$420,00</Text>
+		</View>
+	</View>
+)
+
 const ShoppingCartScreen = () => {
 	const checkoutItems = () => {
 		console.log('Items checked out')
@@ -21,22 +38,7 @@ const ShoppingCartScreen = () => {
 			<FlatList
 				data={cart}
 				renderItem={({ item }) => <CartListItem cartItem={item} />}
-				ListFooterComponent={() => (
-					<View style={styles.totalsContainer}>
-						<View style={styles.row}>
-							<Text style={styles.cartSummary}>Subtotal</Text>
-							<Text style={styles.cartSummary}>$410,00</Text>
-						</View>
-						<View style={styles.row}>
-							<Text style={styles.cartSummary}>Delivery</Text>
-							<Text style={styles.cartSummary}>$10,00</Text>
-						</View>
-						<View style={styles.row}>
-							<Text style={styles.cartSummaryBold}>Total</Text>
-							<Text style={styles.cartSummaryBold}>$420,00</Text>
-						</View>
-					</View>
-				)}
+				ListFooterComponent={shoppingCartTotals}
 			/>
 			<ScrollView>
 				<Pressable
