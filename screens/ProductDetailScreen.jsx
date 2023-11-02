@@ -37,14 +37,11 @@ const ProductDetailScreen = () => {
 				<Text style={styles.productTitle}>{product.name}</Text>
 				{/* Price */}
 				<Text style={styles.productPrice}>${product.price}</Text>
-
 				{/* Description */}
 				<Text style={styles.productDescription}>
 					{product.description}
 				</Text>
-
 				{/* Add To Cart Button */}
-
 				{/* Navigation Icon */}
 			</View>
 		</ScrollView>
@@ -79,7 +76,6 @@ const styles = StyleSheet.create({
 	},
 	productDescriptionView: {
 		paddingHorizontal: 20,
-		paddingVertical: 10,
 		backgroundColor: colors.isabelline
 	}
 })
