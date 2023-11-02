@@ -3,7 +3,6 @@ import products from '../data/products'
 
 const ProductDetailScreen = () => {
 	const product = products[0]
-	console.log(product)
 
 	return (
 		<View>
