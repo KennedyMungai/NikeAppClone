@@ -47,9 +47,10 @@ const ProductDetailScreen = () => {
 					style={{
 						backgroundColor: colors.mauveTaupe,
 						display: 'flex',
+						width: width / 3,
 						marginVertical: 10,
 						borderRadius: 3,
-						justifyContent: 'flex-end'
+						alignSelf: 'flex-end'
 					}}
 					onPress={() => console.log('Add to Cart')}
 				>
