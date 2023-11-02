@@ -8,7 +8,7 @@ const ShoppingCartScreen = () => {
 			<FlatList
 				data={cart}
 				renderItem={({ item }) => <CartListItem cartItem={item} />}
-				ListHeaderComponent={() => (
+				ListFooterComponent={() => (
 					<View style={styles.totalsContainer}>
 						<View style={styles.row}>
 							<Text>Subtotal</Text>
