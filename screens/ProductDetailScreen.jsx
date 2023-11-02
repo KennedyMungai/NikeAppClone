@@ -26,6 +26,7 @@ const ProductDetailScreen = () => {
 				)}
 				horizontal
 				showsHorizontalScrollIndicator={false}
+				pagingEnabled
 			/>
 
 			{/* Title */}
