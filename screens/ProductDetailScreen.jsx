@@ -33,14 +33,19 @@ const ProductDetailScreen = () => {
 
 			{/* Title */}
 			<Text style={styles.productTitle}>{product.name}</Text>
+			<View style={styles.productDescriptionView}>
+				{/* Price */}
+				<Text style={styles.productPrice}>{product.price}</Text>
 
-			{/* Price */}
+				{/* Description */}
+				<Text style={styles.productDescription}>
+					{product.description}
+				</Text>
 
-			{/* Description */}
+				{/* Add To Cart Button */}
 
-			{/* Add To Cart Button */}
-
-			{/* Navigation Icon */}
+				{/* Navigation Icon */}
+			</View>
 		</View>
 	)
 }
@@ -56,6 +61,17 @@ const styles = StyleSheet.create({
 		fontSize: 24,
 		textTransform: 'uppercase',
 		fontWeight: 'bold',
-		color: colors.eerieBlack
+		color: colors.eggPlant
+	},
+	productPrice: {
+		color: colors.mauveTaupe
+	},
+	productDescription: {
+		color: colors.eerieBlack,
+		fontWeight: '500'
+	},
+	productDescriptionView: {
+		paddingHorizontal: 10,
+		paddingVertical: 5
 	}
 })
