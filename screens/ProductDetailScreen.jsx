@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
 	productDescription: {
 		color: colors.eerieBlack,
 		fontWeight: '400',
-		marginVertical: 10,
+		marginVertical: 15,
 		fontSize: 18,
 		lineHeight: 30
 	},
