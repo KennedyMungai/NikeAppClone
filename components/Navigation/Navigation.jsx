@@ -14,11 +14,11 @@ const Navigation = () => {
 				<Stack.Screen
 					name='Product Details'
 					component={ProductDetailScreen}
+					options={{ presentation: 'modal' }}
 				/>
 				<Stack.Screen
 					name='ShoppingCart'
 					component={ShoppingCartScreen}
-					options={{ presentation: 'modal' }}
 				/>
 			</Stack.Navigator>
 		</NavigationContainer>
