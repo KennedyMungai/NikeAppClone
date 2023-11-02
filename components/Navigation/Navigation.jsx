@@ -12,12 +12,12 @@ const Navigation = () => {
 			<Stack.Navigator>
 				<Stack.Screen name='Products' component={ProductsScreen} />
 				<Stack.Screen
-					name='ShoppingCart'
-					component={ShoppingCartScreen}
-				/>
-				<Stack.Screen
 					name='Product Details'
 					component={ProductDetailScreen}
+				/>
+				<Stack.Screen
+					name='ShoppingCart'
+					component={ShoppingCartScreen}
 				/>
 			</Stack.Navigator>
 		</NavigationContainer>
