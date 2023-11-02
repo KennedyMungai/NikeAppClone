@@ -59,7 +59,8 @@ const ProductDetailScreen = () => {
 							padding: 10,
 							textAlign: 'center',
 							fontSize: 20,
-							color: colors.isabelline
+							color: colors.isabelline,
+							fontWeight: 'bold'
 						}}
 					>
 						Add to Cart
