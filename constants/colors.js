@@ -5,5 +5,6 @@ export default {
     mauveTaupe: "#84596B",
     glossyGrape: "#AF9BB6",
     isabelline: "#F2EDEB",
-    middleGreen: "#588157"
+    middleGreen: "#588157",
+    white: "#fff"
 }
