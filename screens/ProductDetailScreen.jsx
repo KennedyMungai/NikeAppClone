@@ -67,12 +67,15 @@ const styles = StyleSheet.create({
 	},
 	productPrice: {
 		color: colors.mauveTaupe,
-		fontWeight: '500',
+		fontWeight: '700',
 		fontSize: 16
 	},
 	productDescription: {
 		color: colors.eerieBlack,
-		fontWeight: '500'
+		fontWeight: '400',
+		marginVertical: 10,
+		fontSize: 18,
+		lineHeight: 30
 	},
 	productDescriptionView: {
 		paddingHorizontal: 20,
