@@ -10,6 +10,7 @@ import {
 } from 'react-native'
 import products from '../data/products'
 import colors from '../constants/colors'
+import { Feather } from '@expo/vector-icons'
 
 const ProductDetailScreen = () => {
 	const product = products[0]
@@ -51,7 +52,7 @@ const ProductDetailScreen = () => {
 					style={{
 						backgroundColor: colors.mauveTaupe,
 						display: 'flex',
-						width: width / 3,
+						// width: width / 3,
 						marginVertical: 10,
 						borderRadius: 5,
 						alignSelf: 'flex-end'
@@ -67,6 +68,8 @@ const ProductDetailScreen = () => {
 							fontWeight: 'bold'
 						}}
 					>
+						<Feather name='shopping-cart' size={24} color='white' />
+						{'    '}
 						Add to Cart
 					</Text>
 				</Pressable>
